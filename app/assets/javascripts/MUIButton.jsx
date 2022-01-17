@@ -8,7 +8,7 @@ const MUIButton = () => {
   }
 
   return (
-    <Button variant="contained">Olá Mundo!</Button>
+    <Button variant="contained">Olá Mundo!!</Button>
   );
 };
 

@@ -2,8 +2,7 @@
 const chokidar = require("chokidar");
 const http = require("http");
 const execSync = require("child_process").execSync;
-const { build } = require('esbuild');
-// const execAsync = require('node-async-exec');
+const build = require('esbuild');
 const configs = {
     'esbuild': {
         'entryFile': 'app/assets/javascripts/application.jsx',
@@ -55,7 +54,7 @@ buildStyleTail();
     }).on("all", (event, fileRelativePath) => {
         var extension = getExtensionByFileName(fileRelativePath);
 
-        // // building tailwind styles as 'build:styles:tail'.
+        // building tailwind styles as 'build:styles:tail'.
         if (fileRelativePath.includes('tail')) {
             buildStyleTail();
             refreshClients();
@@ -123,13 +122,13 @@ function refreshClients() {
 /**
  * Build App JS by ESBuild.
  */
-async function buildJsEsbuild() {
+function buildJsEsbuild() {
     l('build:js:esbuild> start')
 
-    const builder = await build({
+    build.buildSync({
         bundle: true,
         entryPoints: [configs.esbuild.entryFile],
-        incremental: true,
+        // incremental: true,
         minify: true,
         outfile: configs.esbuild.outFile,
         banner: {
