@@ -1,0 +1,3 @@
+rails: rails s
+esbuilder_and_sass: node encoder-assets-server.js
+tailwind: npx tailwindcss -i app/assets/stylesheets/tailwind.css -o app/assets/dist/application-tailwind.css --minify --watch
