@@ -106,6 +106,18 @@ function l(str) {
     console.log(str);
 }
 
+function sleep(ms) {
+    const now = Date.now();
+    const limit = now + ms;
+    let execute = true;
+    while (execute) {
+        if (limit < Date.now()) {
+            execute = false;
+        }
+    }
+    return;
+}
+
 
 /**
  * Notify clients to refresh pages.
@@ -156,6 +168,7 @@ function buildStyleSass() {
 function buildStyleTail() {
     l('build:style:tail> start')
     // execAsync({ cmd: `npx tailwindcss -i ${configs.tail.entryFile} -o ${configs.tail.outFile} --minify --watch` });
-    execSync(`npx tailwindcss -i ${configs.tail.entryFile} -o ${configs.tail.outFile} --minify`);
+    // execSync(`npx tailwindcss -i ${configs.tail.entryFile} -o ${configs.tail.outFile} --minify`);
+    sleep(1000);
     l('build:style:tail> end');
 }
