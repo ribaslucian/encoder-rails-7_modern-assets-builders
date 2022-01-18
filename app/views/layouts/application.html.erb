@@ -12,6 +12,7 @@
 
   <body class="animate__animated animate__fadeIn animate__fast">
     <%= yield %>
+    <%= render partial: '/layouts/components/loader' %>
 
     <%= javascript_include_tag "application" %>
   </body>
