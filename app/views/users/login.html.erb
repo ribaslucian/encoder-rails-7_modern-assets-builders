@@ -1,113 +1,108 @@
-<div class="h-screen w-screen max-h-screen 2xl:bg-gray-900 dark">
-    <div class="2xl:container 2xl:mx-auto">
-        <div class="ui two columns grid stackable centered h-screen max-h-screen en-no-spaces">
-            <div class="column bg-gray-100 en-no-spaces !hidden sm:!hidden md:!hidden lg:!inline-block">
-                <!-- <img src="https://source.unsplash.com/random" alt="" class="w-full max-h-screen h-full object-cover"> -->
-                <!-- <img src="https://images.unsplash.com/photo-1523920290228-4f321a939b4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="" class="w-full max-h-screen h-full object-cover"> -->
-                <img src="https://images.unsplash.com/photo-1554595666-19ceabf46a84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+<div class="h-screen w-screen max-h-screen 2xl:bg-gray-900">
+  <div class="2xl:container 2xl:mx-auto">
+    <div class="ui two columns grid stackable centered h-screen max-h-screen en-no-spaces">
+      <div class="column bg-gray-100 en-no-spaces !hidden sm:!hidden md:!hidden lg:!inline-block">
+        <!-- <img src="https://source.unsplash.com/random" alt="" class="w-full max-h-screen h-full object-cover"> -->
+        <!-- <img src="https://images.unsplash.com/photo-1523920290228-4f321a939b4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" alt="" class="w-full max-h-screen h-full object-cover"> -->
+        <img src="https://images.unsplash.com/photo-1554595666-19ceabf46a84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
                     alt="" class="w-full max-h-screen h-full object-cover">
-            </div>
+      </div>
 
-            <div class="column bg-white">
-                <div class="CenterBlockAbsolute w-full px-7 sm:px-14 md:px-0 lg:px-20">
+      <div class="column bg-white dark:bg-gray-800">
+        <div class="CenterBlockAbsolute w-full px-7 sm:px-14 md:px-0 lg:px-20">
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/178/178158.png"
+          <img src="https://cdn-icons-png.flaticon.com/512/178/178158.png"
                         class="en-no-spaces h-32 rounded-full !table !mx-auto drop-shadow-xl">
 
-                    <br />
+          <br />
 
-                    <h1 class="text-tight md:text-xl font-bold leading-tight mt-12 text-center en-no-spaces">
-                        Informe suas credenciais para acessar.
-                    </h1>
+          <h1 class="dark:text-gray-300 text-tight md:text-xl font-bold leading-tight mt-12 text-center en-no-spaces">
+            Informe suas credenciais para acessar.
+          </h1>
 
-                    <form class="mt-6" action="#" method="POST">
-                        <div>
-                            <label class="block text-gray-700 font-bold" for="email">E-mail:</label>
-                            <input value="ribas.lucian@gmail.com" auto-focus type="email" name="" id="email"
-                                placeholder="Digite seu e-mail aqui."
-                                class="focus:drop-shadow-md font-medium w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none"
-                                autofocus autocomplete required>
-                        </div>
+          <form class="mt-6" action="#" method="POST">
+            <div>
+              <label class="block text-gray-700 font-bold dark:text-gray-500" for="email">
+                E-mail:
+              </label>
 
-                        <div class="mt-4">
-                            <label class="block text-gray-700 font-bold" for="password">Senha:</label>
-                            <input type="password" name="" id="password" placeholder="***" minlength="6" class="focus:drop-shadow-md w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500
-                  focus:bg-white focus:outline-none" required>
-                        </div>
+              <input
+                value="ribas.lucian@gmail.com"
+                auto-focus type="email"
+                name=""
+                id="email"
+                placeholder="Digite seu e-mail aqui."
+                class="
+                  focus:drop-shadow-md font-medium w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none
+                  dark:bg-gray-600 dark:border-gray-600 dark:text-white
+                "
+                autofocus autocomplete required>
+              </div>
 
-                        <div class="text-right mt-2">
-                            <a href="#"
-                                class="text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">
-                                Esqueceu sua senha?
-                            </a>
-                        </div>
+              <div class="mt-4">
+                <label class="dark:text-gray-500 block text-gray-700 font-bold" for="password">
+                  Senha:
+                </label>
 
-                        <button
-                            type="submit"
-                            class="
-                            ease-in duration-300
-                            w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
-                            px-4 py-3 mt-6 border-b-4 border-indigo-600 hover:border-indigo-500">
-                            
-                            Acessar
-                        </button>
-
-                    </form>
-
-                    <hr class="my-6 border-gray-300 w-full">
-
-                    <!-- <button type="button"
-                        class="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300">
-                        <div class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                class="w-6 h-6" viewBox="0 0 48 48">
-                                <defs>
-                                    <path id="a"
-                                        d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z" />
-                                </defs>
-                                <clipPath id="b">
-                                    <use xlink:href="#a" overflow="visible" />
-                                </clipPath>
-                                <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z" />
-                                <path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z" />
-                                <path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z" />
-                                <path clip-path="url(#b)" fill=v"#4285F4" d="M48 48L17 24l-4-3 35-10z" />
-                            </svg>
-                            <span class="ml-4">
-                                Acessar com
-                                Google
-                            </span>
-                        </div>
-                    </button> -->
-
-                    <p class="mt-8">
-                        Não possui acesso?
-                        <a href="#" class="text-blue-500 hover:text-blue-700 font-semibold">
-                            Crie uma conta.
-                        </a>
-                    </p>
-
-                    <br/>
-                    <br/>
-                    <div class="h-px w-1/3 bg-gray-200 _mx-auto"></div>
-                    <br/>
-                    
-                    <div class="text-xs text-gray-400 dark:text-red-400 _text-center font-medium tracking-tight">
-                        © Encoded with
-                        <span class="text-gray-800 font-semibold">Encoder</span>
-                        by
-                        <a href="https://www.linkedin.com/in/lucianrr/" target="_blank" class="text-blue-400">
-                            Lucian Rossoni Ribas
-                        </a>
-                    </div>
-
-                    <br/>
-                    <br/>
-                    <div onclick="window.setTheme('light')">Set Light</div>
-                    <div onclick="window.setTheme('dark')">Set Dark</div>
+                <input
+                  type="password"
+                  name=""
+                  id="password"
+                  placeholder="***"
+                  minlength="6"
+                  class="
+                    focus:drop-shadow-md font-medium w-full px-4 py-3 rounded-lg bg-gray-200 mt-2 border focus:border-blue-500 focus:bg-white focus:outline-none
+                    dark:bg-gray-600 dark:border-gray-600 dark:text-white
+                  ">
                 </div>
-            </div>
-        </div>
 
+              <div class="text-right mt-2">
+                <a href="#"
+                  class="dark:text-gray-500 text-sm font-semibold text-gray-700 hover:text-blue-700 focus:text-blue-700">
+                  Esqueceu sua senha?
+                </a>
+              </div>
+
+              <button
+                type="submit"
+                class="
+                ease-in duration-300
+                w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-lg
+                px-4 py-3 mt-6 border-b-4 border-indigo-600 hover:border-indigo-500">
+
+                Acessar
+              </button>
+
+            </form>
+
+            <br/>
+            <div class="dark:bg-gray-700 h-px w-full bg-gray-200"></div>
+
+            <p class="dark:text-gray-300 mt-8 text-semibold">
+              Não possui acesso?
+              <a href="#" class="text-blue-500 hover:text-blue-700">
+                Crie uma conta.
+              </a>
+            </p>
+
+            <br/>
+            <br/>
+            <%# <div class="dark:bg-gray-700 h-px w-1/5 bg-gray-200"></div> %>
+            <br/>
+
+            <div class="dark:text-gray-300 text-xs text-gray-400 font-medium tracking-tight">
+              © Encoded with
+              <span class="dark:text-gray-100 text-gray-800 font-semibold">
+                Encoder
+              </span>
+              by
+              <a href="https://www.linkedin.com/in/lucianrr/" target="_blank" class="text-blue-400">
+                Lucian Rossoni Ribas
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
