@@ -33,4 +33,5 @@
 import '../components/CenterBlockAbsolute/CenterBlockAbsolute';
 import '../components/MaterialFields';
 import '../components/Loader';
+import '../components/DarkMode';
 // import '../components/TailNavBar';
