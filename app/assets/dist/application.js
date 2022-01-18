@@ -8987,11 +8987,13 @@
 
   // app/assets/components/Loader.js
   var import_jquery3 = __toESM(require_jquery());
-  window.onload = function() {
-    (0, import_jquery3.default)(".Loader").hide();
-  };
   window.onbeforeunload = function() {
     (0, import_jquery3.default)(".Loader").show();
+  };
+  document.onreadystatechange = function() {
+    if (document.readyState == "complete") {
+      (0, import_jquery3.default)(".Loader").hide();
+    }
   };
 })();
 /*!
