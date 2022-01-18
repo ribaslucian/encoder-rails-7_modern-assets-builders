@@ -1,9 +1,13 @@
 module.exports = {
-  content: ["./app/views/**/*.{html,erb,css,scss,js,jsx}"],
+  darkMode: 'class',
+  // important: true,
+  content: ["./app/views/**/*.{html,erb}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': ['Be Vietnam Pro', 'ui-sans-serif', 'system-ui'],
+    }
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
   ],
 }

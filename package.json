@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
+    "ip": "^1.1.5",
+    "jquery": "^3.6.0",
     "node-async-exec": "^1.2.0"
   }
 }

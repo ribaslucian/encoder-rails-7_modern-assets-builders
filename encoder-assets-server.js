@@ -3,6 +3,7 @@ const chokidar = require("chokidar");
 const http = require("http");
 const execSync = require("child_process").execSync;
 const build = require('esbuild');
+const ip = require('ip');
 const configs = {
     'esbuild': {
         'entryFile': 'app/assets/javascripts/application.jsx',
@@ -47,6 +48,7 @@ buildStyleTail();
     chokidar.watch([
         "app/assets/stylesheets/**/*.{scss,css}",
         "app/assets/javascripts/**/*.{js,jsx}",
+        "app/assets/components/**/*.{js,jsx,css,scss}",
         "app/views/**/*.{html,erb}",
     ], {
         interval: 0,
@@ -126,7 +128,7 @@ function refreshClients() {
     // sleep(500);
     // l('<refresh:clients>')
     clients.forEach((res) => res.write('data: update\n\n'))
-    clients.length = 0
+    // clients.length = 0
 }
 
 
@@ -141,10 +143,10 @@ function buildJsEsbuild() {
         bundle: true,
         entryPoints: [configs.esbuild.entryFile],
         // incremental: true,
-        minify: true,
+        // minify: true,
         outfile: configs.esbuild.outFile,
         banner: {
-            js: "(() => new EventSource('http://localhost:8082').onmessage = () => location.reload())();",
+            js: `(() => new EventSource('http://${ip.address()}:8082').onmessage = () => location.reload())();`,
         },
     })
 

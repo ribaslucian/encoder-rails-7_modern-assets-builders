@@ -1,21 +1,21 @@
 // React
-import * as React from 'react'
-import ReactDOM from 'react-dom'
+// import * as React from 'react'
+// import ReactDOM from 'react-dom'
 
 // import "./app.scss";
 
-const element = <h1>Hello world, react</h1>;
-ReactDOM.render(element, document.getElementById('root'));
+// const element = <h1>Hello world, react</h1>;
+// ReactDOM.render(element, document.getElementById('root'));
 
 
 
 // Material TextField
-import {MDCTextField} from '@material/textfield';
-const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
+// import {MDCTextField} from '@material/textfield';
+// const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 
 // MUI Components
-import './MUIButton';
+// import './components/MUIButton';
 
 // const welcome = <Welcome name="Sara" />;
 
@@ -26,3 +26,10 @@ import './MUIButton';
 
 // const muiButton = <MUIButton />;
 // ReactDOM.render(muiButton, document.getElementById('mui'));
+
+//
+// import './components/CenterBlock';
+
+import './functions.js';
+import '../components/CenterBlockAbsolute/CenterBlockAbsolute';
+import '../components/MaterialFields';

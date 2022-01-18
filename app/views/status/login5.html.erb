@@ -1,0 +1,62 @@
+<style>
+    *:not(.material-icons) {
+        /* font-family: "Be Vietnam Pro" !important; */
+    }
+</style>
+
+<div class="h-screen w-screen sm:bg-white md:bg-gray-200">
+    <div class="CenterBlockAbsolute w-screen">
+        <div class="ui three columns grid stackable centered">
+            <div class="column en-no-spaces">
+            <div class="p-8 bg-white rounded-lg _drop-shadow-xl">
+                
+                <div class="text-lg font-bold">
+                    Informe suas credenciais para acessar.
+                </div>
+
+                <br/>
+
+                <label 
+                class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon w-full">
+                    <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label" id="my-label-id">E-mail:</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+
+                    <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" tabindex="0"
+                        role="button">email</i>
+
+                    <input autofocus class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                </label>
+
+                <br />
+                <br />
+
+                <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon w-full">
+                    <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label" id="my-label-id">Senha:</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+
+                    <i class="material-icons mdc-text-field__icon mdc-text-field__icon--leading" tabindex="0"
+                        role="button">lock</i>
+
+                    <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
+                </label>
+
+                <br />
+
+                <button type="submit"
+                    class="w-full block bg-indigo-500 hover:bg-indigo-400 focus:bg-indigo-400 text-white font-semibold rounded-md px-4 py-3 mt-6">
+                    Acessar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
