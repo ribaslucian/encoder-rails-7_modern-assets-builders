@@ -30,9 +30,7 @@
 //
 // import './components/CenterBlock';
 
-import './functions.js';
 import '../components/CenterBlockAbsolute/CenterBlockAbsolute';
 import '../components/MaterialFields';
+import '../components/Loader';
 // import '../components/TailNavBar';
-
-// import 'animate.css'

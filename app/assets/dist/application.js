@@ -8984,6 +8984,15 @@
       new MDCTextFieldIcon(e);
     });
   });
+
+  // app/assets/components/Loader.js
+  var import_jquery3 = __toESM(require_jquery());
+  window.onload = function() {
+    (0, import_jquery3.default)(".Loader").hide();
+  };
+  window.onbeforeunload = function() {
+    (0, import_jquery3.default)(".Loader").show();
+  };
 })();
 /*!
  * jQuery JavaScript Library v3.6.0
