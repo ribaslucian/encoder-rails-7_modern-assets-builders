@@ -8991,9 +8991,8 @@
     (0, import_jquery3.default)(".Loader").show();
   };
   document.onreadystatechange = function() {
-    if (document.readyState == "complete") {
+    if (document.readyState == "complete")
       (0, import_jquery3.default)(".Loader").hide();
-    }
   };
 
   // app/assets/components/DarkMode.js

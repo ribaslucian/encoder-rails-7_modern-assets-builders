@@ -11,14 +11,12 @@
   </head>
 
   <body class="animate__animated animate__fadeIn animate__fast">
+
+    <%= yield %>
   
     <%= render partial: '/layouts/components/loader' %>
     <%#= render partial: '/layouts/components/navbar' %>
     <%= render partial: '/layouts/components/dark_mode_button' %>
-
-    <%= yield %>
-
-    
 
     <%= javascript_include_tag "application" %>
   </body>
