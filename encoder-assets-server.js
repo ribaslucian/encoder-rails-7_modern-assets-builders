@@ -144,6 +144,7 @@ function buildJsEsbuild() {
         entryPoints: [configs.esbuild.entryFile],
         // incremental: true,
         // minify: true,
+        external: ['@heroicons/react/outline'],
         outfile: configs.esbuild.outFile,
         banner: {
             js: `(() => new EventSource('http://${ip.address()}:8082').onmessage = () => location.reload())();`,
