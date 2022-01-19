@@ -1,0 +1,22 @@
+<div>
+    <label class="en-label" for="<%= id = label.parameterize %>">
+        <%= label %>
+    </label>
+
+    <div class="relative mt-2">
+        <i class="en-icon-input fas fa-<%= icon %>"></i>
+
+        <input
+            id="<%= id %>"
+            class="en-input-icon"
+
+            name="<%= defined?(name) ? name : "form_data[#{id}]" %>"
+            type="<%= defined?(type) ? type : 'text' %>"
+            placeholder="<%= defined?(placeholder) ? placeholder : 'Digite aqui.' %>"
+            
+            <%= "value='#{value}'" if defined?(value) %>
+            <%= 'autofocus' if defined?(focus) %>
+            <%= 'required' if defined?(required) %>
+            />
+    </div>
+</div>
