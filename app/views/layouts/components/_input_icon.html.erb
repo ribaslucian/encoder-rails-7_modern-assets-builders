@@ -1,5 +1,7 @@
 <div>
     <label class="en-label" for="<%= id = label.parameterize %>">
+        <%= '<span class="text-gray-400 text-xl dark:text-gray-700">*</span>'.html_safe if !defined?(required) %>
+
         <%= label %>
     </label>
 
@@ -16,7 +18,7 @@
             
             <%= "value='#{value}'" if defined?(value) %>
             <%= 'autofocus' if defined?(focus) %>
-            <%= 'required' if defined?(required) %>
+            <%= 'required' if !defined?(required) %>
             />
     </div>
 </div>
