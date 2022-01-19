@@ -1,9 +1,12 @@
 <div>
-    <label class="en-label" for="<%= id = label.parameterize %>">
-        <%= '<span class="text-gray-400 text-xl dark:text-gray-700">*</span>'.html_safe if !defined?(required) %>
 
-        <%= label %>
-    </label>
+    <% if !defined?(label) %>
+        <label class="en-label" for="<%= id = label.parameterize %>">
+            <%= '<span class="text-gray-400 text-xl dark:text-gray-700">*</span>'.html_safe if !defined?(required) %>
+
+            <%= label %>
+        </label>
+    <% end %>
 
     <div class="relative mt-2">
         <i class="en-icon-input fas fa-<%= icon %>"></i>

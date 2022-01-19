@@ -8994,6 +8994,10 @@
     if (document.readyState == "complete")
       (0, import_jquery3.default)(".Loader").hide();
   };
+  window.addEventListener("popstate", function() {
+    console.log("asdasd");
+    (0, import_jquery3.default)(".Loader").show();
+  });
 
   // app/assets/components/DarkMode.js
   var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
