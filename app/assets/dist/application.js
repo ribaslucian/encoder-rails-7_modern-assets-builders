@@ -9045,9 +9045,6 @@
       (0, import_jquery4.default)(this).parents(".Notify").fadeOut("medium");
     });
   });
-
-  // app/assets/javascripts/application.jsx
-  var import_jquery5 = __toESM(require_jquery());
 })();
 /*!
  * jQuery JavaScript Library v3.6.0

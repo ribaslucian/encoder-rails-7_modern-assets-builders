@@ -16,24 +16,28 @@
 
           <%= image_tag('ilustrations/login1.png', class: 'h-48 block mx-auto' ) %>
 
-          <h1 class="
+            <h1 class="
             dark:text-gray-300 text-tighter font-bold md:text-lg
             mt-12 text-center en-no-spaces
           ">
-            Informe suas credenciais para acessar.
-          </h1>
+              Informe suas credenciais para acessar.
+            </h1>
 
             <div class="en-divider-h my-5"></div>
 
             <div class="mt-5"></div>
 
             <form action="#" method="POST">
-              <%= render partial: '/layouts/components/input_icon' , locals: { _label: 'E-mail:' , icon: 'envelope' ,
-                focus: true, type: 'email' } %>
+              <%= render partial: '/layouts/components/inputs/icon', locals: {
+                _label: 'E-mail:',
+                icon: 'envelope' ,
+                focus: true,
+                type: 'email'
+              } %>
 
                 <div class="mt-5"></div>
 
-                <%= render partial: '/layouts/components/input_icon' , locals: { _label: 'Senha:' , icon: 'key' ,
+                <%= render partial: '/layouts/components/inputs/icon' , locals: { _label: 'Senha:' , icon: 'key' ,
                   type: 'password' , placeholder: '***' } %>
 
                   <div class="text-right mt-2">

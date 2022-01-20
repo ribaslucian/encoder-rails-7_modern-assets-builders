@@ -33,4 +33,3 @@ import '../components/MaterialFields';
 import '../components/Loader';
 import '../components/DarkMode';
 import '../components/Notify';
-import $ from 'jquery';
