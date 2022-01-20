@@ -9034,6 +9034,20 @@
   } else {
     document.documentElement.classList.remove("dark");
   }
+
+  // app/assets/components/Notify.js
+  var import_jquery4 = __toESM(require_jquery());
+  (0, import_jquery4.default)(document).ready(function() {
+    setTimeout(() => {
+      (0, import_jquery4.default)(".Notify").fadeOut("medium");
+    }, 5e3);
+    (0, import_jquery4.default)(".NotifyClose").click(function() {
+      (0, import_jquery4.default)(this).parents(".Notify").fadeOut("medium");
+    });
+  });
+
+  // app/assets/javascripts/application.jsx
+  var import_jquery5 = __toESM(require_jquery());
 })();
 /*!
  * jQuery JavaScript Library v3.6.0

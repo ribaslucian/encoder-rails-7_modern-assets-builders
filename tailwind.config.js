@@ -4,7 +4,7 @@ module.exports = {
   content: ["./app/views/**/*.{html,erb}"],
   theme: {
     fontFamily: {
-      'sans': ['Be Vietnam Pro', 'ui-sans-serif', 'system-ui'],
+      'sans': ['Inter', 'Be Vietnam Pro', 'ui-sans-serif', 'system-ui'],
     }
   },
   plugins: [

@@ -8,22 +8,16 @@
       <div class="column bg-white dark:bg-gray-800">
         <div class="CenterBlockAbsolute w-full px-7 sm:px-14 md:px-0 lg:px-20">
 
-          <%# <img src="https://source.unsplash.com/random"
-              class="border-2 border-gray-300 en-no-spaces h-32 w-32 rounded-full !table !mx-auto drop-shadow-xl"> %>
-
-          <%# <div class="fas fa-sign-in-alt text-4xl text-center"> %>
-          <div class="fas fa-user-plus text-7xl mx-auto table _text-indigo-600 text-gray-700"></div>
-          
-          <br />
+          <%= image_tag('ilustrations/sign-up.png', class: 'h-48 block mx-auto') %>
 
           <h1 class="
             dark:text-gray-300 text-tighter font-bold md:text-lg
             mt-12 text-center en-no-spaces
           ">
-            Preencha os dados para criar sua conta.
+            Informe seus dados para criar sua conta.
           </h1>
 
-          <div class="en-divider-h my-5"></div>
+          <div class="en-divider-h my-2 mb-5"></div>
 
           <form action="#" method="POST">
 
@@ -33,7 +27,7 @@
               focus: true
             } %>
             
-            <br/>
+            <div class="mt-5"></div>
 
             <%= render partial: '/layouts/components/input_icon', locals: {
               placeholder: 'E-mail:',
@@ -41,7 +35,7 @@
               type: 'email',
             } %>
 
-            <br/>
+            <div class="mt-5"></div>
 
             <%= render partial: '/layouts/components/input_icon', locals: {
               placeholder: 'Senha:',
@@ -49,7 +43,7 @@
               type: 'password',
             } %>
 
-            <br/>
+            <div class="mt-5"></div>
 
             <%= render partial: '/layouts/components/input_icon', locals: {
               placeholder: 'Confirme sua senha:',
@@ -57,16 +51,16 @@
               type: 'password',
             } %>
 
-            <br/>
 
             <button
                 type="submit"
                 class="
+                w-full
                 mx-auto block bg-blue-500 text-white
                 rounded-lg px-6 py-3 mt-6
                 font-semibold md:font-normal
                 hover:bg-blue-700
-                focus:bg-blue-600 
+                focus:bg-blue-600
                 
                 transition-all hover:scale-105
                 ">
@@ -79,12 +73,18 @@
           <div class="en-divider-h"></div>
 
           <p class="
-            dark:text-gray-300
+            dark:text-gray-300 text-sm
             mt-8 font-semibold text-gray-800
           ">
             Já possui uma conta?
-            <a href="/users/sign_in" class="text-blue-500 hover:text-blue-600">
-              Faça login.
+            <a href="/users/sign_in" class="
+              text-tighter font-semibold text-sm
+              block inline text-blue-500 bg-blue-100 rounded-md
+              p-2 px-3 ml-1
+
+              transition-all hover:scale-105
+            ">
+            Faça login
             </a>
           </p>
 

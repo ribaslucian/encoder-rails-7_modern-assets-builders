@@ -27,11 +27,10 @@
 // const muiButton = <MUIButton />;
 // ReactDOM.render(muiButton, document.getElementById('mui'));
 
-//
 // import './components/CenterBlock';
-
 import '../components/CenterBlockAbsolute/CenterBlockAbsolute';
 import '../components/MaterialFields';
 import '../components/Loader';
 import '../components/DarkMode';
-// import '../components/TailNavBar';
+import '../components/Notify';
+import $ from 'jquery';

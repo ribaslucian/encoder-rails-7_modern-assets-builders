@@ -1,12 +1,12 @@
+
 <div>
 
-    <% if !defined?(label) %>
-        <label class="en-label" for="<%= id = label.parameterize %>">
+    <% if defined?(_label) %>
+        <label class="en-label" for="<%= (id = _label.parameterize) %>">
             <%= '<span class="text-gray-400 text-xl dark:text-gray-700">*</span>'.html_safe if !defined?(required) %>
-
-            <%= label %>
+            <%= _label %>
         </label>
-    <% end %>
+    <% else id = random_hash end %>
 
     <div class="relative mt-2">
         <i class="en-icon-input fas fa-<%= icon %>"></i>
