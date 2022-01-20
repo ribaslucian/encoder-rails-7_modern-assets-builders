@@ -11,15 +11,13 @@
   </head>
 
   <body class="animate__animated animate__fadeIn animate__fast">
-    <%= render partial: '/layouts/components/alerts/green', locals: {
-      text: 'Pronto! Você já pode acessar sua conta.'
-    } %>
+    <%#= render partial: '/layouts/components/alerts/green', locals: {text: 'Pronto! Você já pode acessar sua conta.'} %>
 
     <%= yield %>
 
     <%#= render partial: '/layouts/components/navbar' %>
     <%= render partial: '/layouts/components/loader' %>
-    <%= render partial: '/layouts/components/dark_mode_button' %>
+    <%#= render partial: '/layouts/components/dark_mode_button' %>
     <%#= render partial: '/layouts/components/copyright' %>
 
     <%= javascript_include_tag "application" %>
